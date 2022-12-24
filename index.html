@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Criptografador</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo"><img src="./assets/logo.svg" alt="Logo da Alura" /></h1>
+
+      <div id="digitetexto">
+        <ul>
+          <li>
+            <img src="./assets/carinha.svg" alt="Cara com um lupa" />
+            <p class="primeiroParagrafo">Nenhuma mensagem encontrada</p>
+            <p class="segundoParagrafo">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <textarea
+          id="textArea"
+          placeholder="Digite seu texto..."
+          spellcheck="false"
+        ></textarea>
+      </div>
+      <div id="info">
+        <img src="./assets/exclamacao.svg" alt="" />
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div id="button">
+        <button id="criptografa" onclick="criptografa()">Criptografar</button>
+        <button id="descriptografa" onclick="descriptografa()">
+          Descriptografar
+        </button>
+      </div>
+      <div id="resultado">
+        <textarea id="textosaida"></textarea>
+        <button id="copiar" onclick="copia()">Copiar</button>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <p id="copy">&copy; copyright Jonas Teixeira - 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

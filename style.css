@@ -202,15 +202,49 @@ body {
 }
 
 #copy {
-    background: rgb(209, 209, 209);
-    width: 100%;
-    height: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 13px;
-    color: #000000;
-    text-align: center;
-    
-    
+  background: rgb(209, 209, 209);
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 13px;
+  color: #000000;
+  text-align: center;
+}
+
+#social-mobile--body {
+  box-sizing: border-box;
+  padding: 2%;
+  display: inline;
+  position: fixed;
+  flex-direction: column;
+  flex-wrap: wrap;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+#social-mobile--body {
+  display: flex;  
+  border-top: 1px solid#4b4b4b4b;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#social-mobile {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#social-mobile a {
+  margin-right: 10px;
+}
+
+#social-mobile a img:hover {
+  color: #e5e5e5;
+  border-top: 2px solid black;
+  transform: scale(1.5); 
 }
